@@ -34,6 +34,7 @@ public class MainActivity extends Activity implements OnClickListener {
 
 		initialize();
 		addListener();
+		System.out.println("In on create");
 		lvContacts = (ListView) findViewById(R.id.ContactsListView);
 		ContentResolver cr = getContentResolver();
 		Cursor c = cr.query(ContactsContract.Contacts.CONTENT_URI,
